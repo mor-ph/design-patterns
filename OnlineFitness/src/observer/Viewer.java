@@ -10,10 +10,8 @@ public class Viewer extends MrFitMan implements Observer{
 
 	@Override
 	public void update() {
-		if(model == null) {
-			System.out.println(this.name + " doesn't have an ExampleMan to copy from.");
-		}else
-			super.doExercise(model.getUpdate());
+		super.doExercise(model.getUpdate());
+		
 	}
 
 	@Override
